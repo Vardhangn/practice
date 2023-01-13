@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+	<bean id ="stud" class = "Student" autowire="byName">
+		<property name="roll" value="22"></property>
+		<property name="name" value="hari"></property>
+		<property name="marks" value="226"></property>
+		<property name="branch" value="mech"></property>
+		<!-- <property name="add" ref="address"></property> -->
+	
+	
+	</bean>    
+
+	<bean id = "add" class = "Address">
+		<property name="hno" value="22"></property>
+		<property name="colony" value="neeladr"></property>
+		<property name="city" value="bnglr"></property>
+		<property name="pincode" value="560444"></property>
+	
+	
+	</bean>
+
+
+
+    
+</beans>
