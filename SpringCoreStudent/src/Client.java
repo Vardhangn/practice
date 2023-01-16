@@ -6,6 +6,7 @@ public class Client {
 	
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
 		
+		System.out.println("hello");
 		
 		System.out.println(ctx.getBean("stud"));
 //		System.out.println(ctx.getBean("stud2"));
